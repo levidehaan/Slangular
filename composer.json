@@ -1,6 +1,13 @@
 {
-	"require" : {
-		"slim/slim" : "2.*",
-		"doctrine/orm" : "*"
-	}
+    "require" : {
+        "slim/slim" : "2.*",        
+        "monolog/monolog" : "*",
+        "doctrine/orm" : "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "slang": ""            
+        }
+        
+    }
 }

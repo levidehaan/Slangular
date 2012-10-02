@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
-    </body>
-</html>
+<?php
+
+require "vendor/autoload.php";
+
+define('APP_PATH', realpath('.'));
+
+$_paths = array(
+    APP_PATH,
+    get_include_path()
+);
+
+set_include_path(implode(PATH_SEPARATOR, $_paths));
+
+$slang = new Slangular\Slangular();
